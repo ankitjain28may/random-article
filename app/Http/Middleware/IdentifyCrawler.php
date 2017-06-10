@@ -41,6 +41,7 @@ class IdentifyCrawler
                     return response(view('article.random')->with('data', $data));
             }
         }
-        return $next($request);
+        return response(view('article.random'));
+        // return $next($request);
     }
 }
