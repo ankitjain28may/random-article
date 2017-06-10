@@ -7,8 +7,8 @@
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="{{ $data['name'] }}"/>
         <meta property="og:description" content="{{ $data['description'] }}" />
-        <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
-        <meta property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+        <meta property="og:image" content="{{ $data['image_url'] }}" />
+        <meta property="og:url" content="https://random-articles.herokuapp.com/" />
 
         <title>Random Article</title>
 

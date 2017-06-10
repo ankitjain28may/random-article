@@ -16,4 +16,3 @@ Route::get('/', [
     'uses' => 'HomeController@index'
 ])->middleware('randomArticle');
 
-Route::get('/show', 'HomeController@show')->middleware('randomArticle');

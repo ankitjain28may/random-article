@@ -7,7 +7,8 @@ use Closure;
 use RandomArticle;
 use Route;
 use Redirect;
-use Log;
+require_once dirname(__DIR__).'/../../vendor/fzaninotto/faker/src/autoload.php';
+use Faker\Factory as Fake;
 
 class IdentifyCrawler
 {
@@ -27,13 +28,17 @@ class IdentifyCrawler
         ];
 
         $userAgent = $request->header('User-Agent');
-        Log::error("Hit..!");
 
-        if (str_contains($userAgent, $crawlers)) {
-            Log::error("Tracked..!");
+        $faker = Fake::create();
+
+
+        if (!str_contains($userAgent, $crawlers)) {
             switch (Route::getCurrentRoute()->getName()) {
                 case "randomArticle":
-                    return Redirect::to('/show');
+                    $data['name'] = $faker->name;
+                    $data['description'] = $faker->text;
+                    $data['image_url'] = $faker->image;
+                    return response(view('article.random')->with('data', $data));
             }
         }
         return $next($request);
