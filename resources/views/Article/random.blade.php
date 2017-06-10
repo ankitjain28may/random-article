@@ -10,7 +10,7 @@
         <meta property="og:image" content="{{ $data['image_url'] }}" />
         <meta property="og:url" content="https://random-articles.herokuapp.com/" />
 
-        <title>Random Article</title>
+        <title>Ankit Jain</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -73,7 +73,7 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
-                    Ankit
+                    Random Article
                 </div>
 
                 <div class="links">
