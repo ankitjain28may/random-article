@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:type" content="website"/>
         <meta property="og:title" content="{{ $data['name'] }}"/>
         <meta property="og:description" content="{{ $data['description'] }}" />
-        <meta property="og:image" content="http://www.tajmahal.org.uk/gifs/taj-mahal.jpeg" />
-        <meta property="og:url" content="" />
+        <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+        <meta property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
 
         <title>Random Article</title>
 
