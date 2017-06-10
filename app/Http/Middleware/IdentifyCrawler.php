@@ -7,6 +7,7 @@ use Closure;
 use RandomArticle;
 use Route;
 use Redirect;
+use Log;
 
 class IdentifyCrawler
 {
@@ -28,6 +29,7 @@ class IdentifyCrawler
         $userAgent = $request->header('User-Agent');
 
         if (str_contains($userAgent, $crawlers)) {
+            Log::info("Tracked..!");
             switch (Route::getCurrentRoute()->getName()) {
                 case "randomArticle":
                     return Redirect::to('/show');
