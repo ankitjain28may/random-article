@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:title" content="{{ $data['name'] }}"/>
         <meta property="og:description" content="{{ $data['description'] }}" />
-        <meta property="og:image" content="{{ $data['image_url'] }}" />
+        <meta property="og:image" content="http://www.tajmahal.org.uk/gifs/taj-mahal.jpeg" />
         <meta property="og:url" content="" />
 
         <title>Random Article</title>
