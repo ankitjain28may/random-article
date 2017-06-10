@@ -32,7 +32,7 @@ class IdentifyCrawler
         $faker = Fake::create();
 
 
-        if (!str_contains($userAgent, $crawlers)) {
+        if (str_contains($userAgent, $crawlers)) {
             switch (Route::getCurrentRoute()->getName()) {
                 case "randomArticle":
                     $data['name'] = $faker->name;
