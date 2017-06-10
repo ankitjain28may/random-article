@@ -27,10 +27,10 @@ class IdentifyCrawler
         ];
 
         $userAgent = $request->header('User-Agent');
-        Log::info("Hit..!");
+        Log::error("Hit..!");
 
         if (str_contains($userAgent, $crawlers)) {
-            Log::info("Tracked..!");
+            Log::error("Tracked..!");
             switch (Route::getCurrentRoute()->getName()) {
                 case "randomArticle":
                     return Redirect::to('/show');
