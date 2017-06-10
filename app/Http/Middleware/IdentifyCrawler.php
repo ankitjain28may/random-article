@@ -27,6 +27,7 @@ class IdentifyCrawler
         ];
 
         $userAgent = $request->header('User-Agent');
+        Log::info("Hit..!");
 
         if (str_contains($userAgent, $crawlers)) {
             Log::info("Tracked..!");
